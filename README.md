@@ -3,6 +3,7 @@ Mysql Database notifies java application when a record has changed.
 
 Requirements:
 Java 8
+
 Ubuntu 14.04 or greater 
 
 Run Steps :
@@ -36,7 +37,7 @@ $ gcc $(mysql_config --cflags) -I/usr/lib/jvm/jdk1.8.0_92/include -I/usr/lib/jvm
       
       select db_modify_event('topic','data');
 
-7) Check is function created or not using -> select * from mysql.func;"
+7) Check is function created or not using -> select * from mysql.func;
 
 8) Copy tme.so to /var/tmp/MYSQL_UDF  
 
